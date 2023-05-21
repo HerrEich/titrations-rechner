@@ -1,0 +1,69 @@
+body {
+  margin-top: 3rem;
+    text-align: center;
+    font-family:Georgia, Times, 'Times New Roman', serif
+  }
+  
+  #form-container {
+    text-align: center;
+  }
+
+  #result span{
+    font-size: large;
+    color: red;
+  }
+
+  #ergebnis_h_ions{
+    font-size: large;
+    color: red;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+
+  input{
+    min-width: 10px;
+    width: 5rem;
+  }
+  .säure-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .säure_gleichzeichen,
+  .säure_malzeichen{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .ph-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .input_mit_einheit{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .rechte_seite1{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .c_h_ions_result, #ph_result{
+    font-size: large;
+    color: red;
+  }
+
+  .keine_eintragung{
+    color: red;
+  }
