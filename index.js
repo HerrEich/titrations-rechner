@@ -1,7 +1,5 @@
 let vol_naoh = (document.getElementById('vol_naoh').value);
 const ergebnis_feld = document.getElementById('ergebnis');
-const m_zitronensaeure_feld = document.getElementById('m_zitronensäure');
-m_zitronensäure
 const v_energy = 10
 const c_naoh = 0.001
 const mol_gewicht_zitronensaeure = 192.13
