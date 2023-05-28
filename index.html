@@ -4,73 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titrations-Rechner</title>
+    <title>Titrations-Rechner - pH-Wert eines Energy-Drinks</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Titrations-Rechner</h1>
     
-    <div class="verbrauch">    
-  
-      <h2>1. Wie viel Natronlauge habt ihr verbraucht?</h2>
-      <p>Gebt unten ein, wie viel ml Maßlösung ihr bei der ersten, zweiten und dritten Titration verbraucht habt.</p>
-      
-      <div class="form-container" style="text-align: center">
-        <input type="number" id="verbrauch1" placeholder="Verbrauchte ml (1. Titration)">
-        <input type="number" id="verbrauch2" placeholder="Verbrauchte ml (2. Titration)">
-        <input type="number" id="verbrauch3" placeholder="Verbrauchte ml (3. Titration)">
-      </div>
-      <button onclick="calculateAverage()">Berechnen</button>
-      <p class="result" id="result"></p>
-    </div>
+    <div class="main-container">
+        <h1>Auswertung der Titration</h1>
 
-    <div class="säuren-konzentration">
 
-      <h2>2. Wie viele Wasserstoff-Ionen sind im Energy-Drink?</h2>
-      <p>Wir können jetzt mithilfe der folgenden Formel errechnen, wie hoch die Konzentration von Wasserstoff-Ionen im Energy-Drink ist.</p>
-      <p>Gebt alle Werte ein und klickt auf "Berechnen".</p>
-      <div class="säure-container">
-
-        <p id="c_h_ions" class="c_h_ions">Konzentration der Wasserstoff-Ionen im Energy-Drink (in mol/ml)</p>
-        <p class="säure_gleichzeichen">=</p>
-        
-        <div class="rechte_seite1">
-          <div class="input_mit_einheit">
-            <p>Konzentration (Natronlauge):</p>
-            <input type="number" id="c_natronlauge">
-            <p>mol/ml</p>
-            <p class= "säure_malzeichen">*</p>
-            <p>Verbrauchtes Volumen (Natronlauge):</p>
-            <input type="number" id="v_natronlauge" value="">
-            <p>mL</p>
-          </div>
-          <p>____________________________________________</p>
-          <div class="input_mit_einheit">
-            <p>Volumen (Energydrink):</p>
-            <input type="number" id="v_energy" value="">
-            <p>mL</p>
-          </div>
+        <div class="berechnung-verbrauch">
+            <p>Euer "Startwert":</p>
+            <input type="number" id="startwert" placeholder="Hier den Wert eingeben">
+            <p>Euer "Zielwert": </p>
+            <input type="number" id="zielwert" placeholder="Hier den Wert eingeben">
+            <div class="container-2">
+                <button onclick = calculate_verbrauch() >Berechne den Verbrauch</button>
+                <p id="ergebnis_verbrauch"></p>
+                
+            </div>
         </div>
-      </div>
-      <p class="ergebnis_h_ions" id="ergebnis_h_ions"></p>
-      <button onclick="calculateHIons()">Berechnen</button>
-      <p class="keine_eintragung" id="keine_eintragung"></p>
-    </div>
 
-    <div class="ph-wert">
-      <h2>3. Wie hoch ist der pH-Wert des Energy-Drinks?</h2>
-      <p>Der pH-Wert ist der negative dekadische Logarithmus der Wasserstoff-Ionen-Konzentration. Klicke auf "Berechnen", um
-        den deine Wasserstoff-Ionen-Konzentration auf den pH-Wert umzurechnen
-      </p>
-      <div class="ph-container">
-        <p id="ph_result"></p>
-      </div>
-      <button onclick="calculatepH()">Berechnen</button>
+
+        <div class="ph-container">
+            <p>Gebt hier ein, wie viel ml Natronlauge (NaOH) ihr verbraucht habt:</p>
+            <input type="number" name="vol_naoh" id="vol_naoh" placeholder="Hier den Wert eingeben">
+            
+            <p id="ergebnis"></p>
+            <p id="m_zitronensäure"></p>
+            <button onclick = calculate() >Berechne den pH-Wert</button>
+    
+        </div>
     </div>
 
 
-      <script src="index.js"></script></div>
 
-  </body>
+    <script src="index.js"></script></div>
+</body>
 </html>

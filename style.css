@@ -1,69 +1,27 @@
 body {
   margin-top: 3rem;
     text-align: center;
-    font-family:Georgia, Times, 'Times New Roman', serif
+    font-family: Times, 'Times New Roman', serif
   }
   
-  #form-container {
+  h1{
+    padding: 20px;
+  }
+
+  .main-container{
+    margin: 10% 10%;
     text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 50px 10px rgba(0, 0, 0, 0.1);
   }
 
-  #result span{
-    font-size: large;
-    color: red;
+  button{
+    width: max-content;
+    margin-bottom: 10px;
+
   }
 
-  #ergebnis_h_ions{
-    font-size: large;
-    color: red;
-  }
-  
-  button {
-    padding: 10px 20px;
-    margin-top: 10px;
-  }
-
-  input{
-    min-width: 10px;
-    width: 5rem;
-  }
-  .säure-container{
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  .berechnung-verbrauch{
     align-items: center;
-  }
-
-  .säure_gleichzeichen,
-  .säure_malzeichen{
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-
-  .ph-container{
-    display: flex;
-    text-align: center;
     justify-content: center;
-  }
-
-  .input_mit_einheit{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .rechte_seite1{
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .c_h_ions_result, #ph_result{
-    font-size: large;
-    color: red;
-  }
-
-  .keine_eintragung{
-    color: red;
   }
